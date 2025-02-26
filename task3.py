@@ -22,7 +22,7 @@ def read_root():
 app.add_middleware(
     CORSMiddleware,
     # Allow all origins, you can restrict this to specific domains in production
-    allow_origins=["https://fastapi-todo-frontend.vercel.app/"],
+    allow_origins=["https://fastapi-todo-frontend.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods like GET, POST, PUT, DELETE
     allow_headers=["*"],  # Allow all headers
