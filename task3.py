@@ -14,6 +14,10 @@ tasks_collection = db.tasks
 # FastAPI app instance
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message" : "Hello world!"}
+
 # Middleware
 app.add_middleware(
     CORSMiddleware,
