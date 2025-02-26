@@ -16,7 +16,11 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
+<<<<<<< HEAD
     return {"message": "Hello, World!"}
+=======
+    return {"message" : "Hello world!"}
+>>>>>>> 7ae1b4a7e288ab75b7b9115d1530edb122bfed7d
 
 # Middleware
 app.add_middleware(
