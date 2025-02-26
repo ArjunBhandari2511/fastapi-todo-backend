@@ -7,7 +7,7 @@ from pydantic import BaseModel
 
 # MongoDB Connection
 # Replace with your MongoDB URI
-client = MongoClient("mongodb+srv://arjun2511:arjun@2511@cluster0.ef5g7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+client = MongoClient("mongodb+srv://arjun2511:arjun%402511@cluster0.ef5g7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = client.todo_db
 tasks_collection = db.tasks
 
