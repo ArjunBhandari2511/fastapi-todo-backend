@@ -14,11 +14,15 @@ tasks_collection = db.tasks
 # FastAPI app instance
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
+
 # Middleware
 app.add_middleware(
     CORSMiddleware,
     # Allow all origins, you can restrict this to specific domains in production
-    allow_origins=["*"],
+    allow_origins=["https://fastapi-todo-frontend.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods like GET, POST, PUT, DELETE
     allow_headers=["*"],  # Allow all headers
